@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.alexbdev.quizzy.builder.CheckBowAnswerBuilder;
+import com.alexbdev.quizzy.builder.CheckBoxAnswerBuilder;
 import com.alexbdev.quizzy.widget.CheckBoxAnswer;
 
 import java.util.ArrayList;
@@ -44,7 +44,7 @@ public class QuizQuestionActivity extends AppCompatActivity {
         checkBoxesAnswerList = new ArrayList<>();
         for (int i = 1; i < 5; i++) {
             String content = "Réponse : "+i;
-            checkBoxesAnswerList.add(CheckBowAnswerBuilder.create(this, content, false));
+            checkBoxesAnswerList.add(CheckBoxAnswerBuilder.create(this, content, false));
         }
     }
 
