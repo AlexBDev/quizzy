@@ -9,7 +9,7 @@ import com.alexbdev.quizzy.widget.CheckBoxAnswer;
  * Created by alexis on 25/05/17.
  */
 
-public class CheckBowAnswerBuilder {
+public class CheckBoxAnswerBuilder {
     public static CheckBoxAnswer create(Context context, String text, Boolean isCorrectAnswer) {
         Answer answer = new Answer();
         CheckBoxAnswer checkBoxAnswer = new CheckBoxAnswer(context);
