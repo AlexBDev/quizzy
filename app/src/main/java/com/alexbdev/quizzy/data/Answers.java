@@ -1,19 +1,19 @@
 package com.alexbdev.quizzy.data;
 
-import java.util.Collection;
+import java.util.ArrayList;
 
 /**
  * Created by alexis on 25/05/17.
  */
 
 public class Answers {
-    protected Collection<Answer> answers;
+    protected ArrayList<Answer> answers = new ArrayList<>();
 
-    public Collection<Answer> getAnswers() {
+    public ArrayList<Answer> getAnswers() {
         return answers;
     }
 
-    public Answers setAnswers(Collection<Answer> answers) {
+    public Answers setAnswers(ArrayList<Answer> answers) {
         this.answers = answers;
 
         return this;

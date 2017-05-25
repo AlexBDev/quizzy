@@ -12,15 +12,19 @@ public class Question {
         return text;
     }
 
-    public void setText(String text) {
+    public Question setText(String text) {
         this.text = text;
+
+        return this;
     }
 
     public Answers getAnswers() {
         return answers;
     }
 
-    public void setAnswers(Answers answers) {
+    public Question setAnswers(Answers answers) {
         this.answers = answers;
+
+        return this;
     }
 }

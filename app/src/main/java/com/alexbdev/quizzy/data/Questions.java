@@ -13,7 +13,15 @@ public class Questions {
         return questions;
     }
 
-    public void setQuestions(Collection<Question> questions) {
+    public Questions setQuestions(Collection<Question> questions) {
         this.questions = questions;
+
+        return this;
+    }
+
+    public Questions addQuestion(Question question) {
+        questions.add(question);
+
+        return this;
     }
 }

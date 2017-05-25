@@ -10,15 +10,13 @@ import com.alexbdev.quizzy.widget.CheckBoxAnswer;
  */
 
 public class CheckBoxAnswerBuilder {
-    public static CheckBoxAnswer create(Context context, String text, Boolean isCorrectAnswer) {
-        Answer answer = new Answer();
+    public static CheckBoxAnswer create(Context context, Answer answer) {
         CheckBoxAnswer checkBoxAnswer = new CheckBoxAnswer(context);
 
-        answer.create(text, isCorrectAnswer);
-        checkBoxAnswer.setText(text);
+        checkBoxAnswer.setAnswer(answer);
+        checkBoxAnswer.setText(answer.getText());
         checkBoxAnswer.setLines(1);
         checkBoxAnswer.setWidth(400);
-        checkBoxAnswer.setText(text);
         checkBoxAnswer.setClickable(true);
         checkBoxAnswer.setHeight(75);
 
