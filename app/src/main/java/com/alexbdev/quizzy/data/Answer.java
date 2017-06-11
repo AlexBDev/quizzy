@@ -7,6 +7,7 @@ package com.alexbdev.quizzy.data;
 public class Answer {
     protected String text;
     protected Boolean isCorrectAnswer = false;
+    protected boolean isSelected = false;
 
     @Override
     public String toString() {
@@ -35,5 +36,13 @@ public class Answer {
         setCorrectAnswer(correctAnswer);
 
         return this;
+    }
+
+    public boolean isSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
     }
 }

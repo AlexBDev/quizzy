@@ -33,4 +33,14 @@ public class CheckBoxAnswer extends AppCompatCheckBox {
 
         return this;
     }
+
+    @Override
+    public void setChecked(boolean checked)
+    {
+        super.setChecked(checked);
+
+        if (this.answer != null) {
+            this.answer.setSelected(checked);
+        }
+    }
 }
